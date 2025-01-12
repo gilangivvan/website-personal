@@ -1,39 +1,45 @@
 /* Global Styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Font modern dan profesional */
-    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #051c63; /* Warna latar belakang lebih lembut dan cerah */
-    color: #0a0b0b; /* Warna teks lebih kontras */
+    background-color: #051c63;
+    color: #0a0b0b;
+    line-height: 1.7;
 }
 
-/* Header */
 header {
-    background: linear-gradient(90deg, #dae3f2, #507ef2); /* Gradien warna pink modern */
+    background: linear-gradient(90deg, #dae3f2, #507ef2);
     color: #fff;
-    padding: 2em 0;
     text-align: center;
-    text-decoration-color: #fff; 
+    padding: 1.5em 0;
     border-bottom: 5px solid #031661;
+}
+
+header h1 {
+    font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-header h1 {
-    font-size: 2.8em; 
-    margin: 0;
-    font-weight: 800;
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Font lebih kecil di HP */
+        padding: 1em 0;
+    }
 }
 
+
 /* Navigation Bar */
+/* Navigation Styles */
 nav ul {
-    background: #01010a; /* Biru gelap elegan */
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    background: #01010a;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,34 +48,55 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
+    padding: 1em 2em;
     color: #fff;
     text-decoration: none;
-    padding: 1em 2em;
-    display: block;
     font-weight: 600;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #6c5ce7; /* Warna hover ungu yang menarik */
-    color: #fff;
+    background: #6c5ce7;
     transform: scale(1.05);
 }
 
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Navigasi vertikal di HP */
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 0.8em 1.5em;
+        font-size: 0.9em; /* Font lebih kecil */
+    }
+}
+
+
 /* Main Content */
 main {
-    padding: 40px;
     max-width: 960px;
     margin: 40px auto;
-    background: #ffffff; /* Warna putih bersih */
+    padding: 40px;
+    background: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
 }
 
 main:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
+
 
 h1, h2, h3 {
     color: #080809; /* Ungu modern */
@@ -122,14 +149,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
     font-size: 0.9em;
-    border-top: 5px solid #051c63; /* Warna sesuai tema */
+    border-top: 5px solid #051c63;
 }
 
 footer p {
     margin: 0;
 }
+
+}
+
 
 footer a {
     color: #6c5ce7;
@@ -168,11 +197,11 @@ a, button {
 a:hover, button:hover {
     transform: scale(1.05);
 
-    /* Responsif untuk layar lebih kecil (HP) */
+    /* Responsif untuk HP */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em; /* Ukuran font lebih kecil di HP */
-        padding: 1.5em 0;
+    footer {
+        font-size: 0.8em;
+        padding: 15px 0;
     }
 
     nav ul {
@@ -195,24 +224,4 @@ a:hover, button:hover {
     }
 }
 
-<header>
-    <h1>Desain Responsif Modern</h1>
-</header>
-<nav>
-    <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang</a></li>
-        <li><a href="#">Layanan</a></li>
-        <li><a href="#">Kontak</a></li>
-    </ul>
-</nav>
-<main>
-    <h2>Selamat Datang di Situs Kami</h2>
-    <p>Desain ini responsif dan cocok untuk perangkat apa pun!</p>
-</main>
-<footer>
-    <p>&copy; 2025 Desain Modern. Semua hak cipta dilindungi.</p>
-</footer>
 
-
-}
