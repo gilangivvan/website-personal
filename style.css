@@ -119,39 +119,40 @@ p {
 /* Video Section */
 .video-container {
     text-align: center;
-    margin: 20px auto; /* Margin otomatis untuk perataan */
-    padding: 10px; /* Padding lebih kecil untuk HP */
-    border-radius: 10px;
-    background: #f1f1f1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Kurangi intensitas bayangan */
+    margin: 20px auto; /* Margin otomatis untuk perataan tengah */
+    padding: 10px; /* Padding fleksibel */
+    border-radius: 10px; /* Sudut membulat untuk tampilan estetis */
+    background: #f1f1f1; /* Warna latar belakang netral */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
 }
 
+/* Video Responsif */
 .video-container iframe,
 .video-container video {
-    width: 100%; /* Lebar penuh */
-    max-width: 100%; /* Sesuai lebar container */
-    height: auto; /* Menjaga proporsi */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan lebih ringan */
-    transition: transform 0.3s ease;
+    width: 100%; /* Lebar penuh untuk responsivitas */
+    max-width: 800px; /* Batas maksimal lebar video */
+    height: auto; /* Proporsi otomatis sesuai lebar */
+    border-radius: 10px; /* Sudut membulat pada video */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Bayangan ringan */
+    transition: transform 0.3s ease; /* Animasi efek hover */
 }
 
 .video-container iframe:hover,
 .video-container video:hover {
-    transform: scale(1.03); /* Efek zoom lebih kecil */
+    transform: scale(1.03); /* Sedikit zoom saat hover */
 }
 
-/* Responsif untuk layar kecil (max-width: 768px) */
+/* Responsif untuk layar kecil (HP) */
 @media (max-width: 768px) {
     .video-container {
-        margin: 15px auto; /* Margin lebih kecil */
-        padding: 8px; /* Padding lebih kecil */
+        margin: 15px auto; /* Margin lebih kecil untuk layar kecil */
+        padding: 8px; /* Padding disesuaikan */
     }
 
     .video-container iframe,
     .video-container video {
-        max-width: 100%; /* Pastikan lebar penuh di layar kecil */
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); /* Bayangan lebih lembut */
+        max-width: 100%; /* Pastikan video memenuhi lebar layar */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Bayangan lebih halus di HP */
     }
 }
 
