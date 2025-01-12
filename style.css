@@ -116,43 +116,58 @@ p {
 }
 
 /* Video Section */
-/* Video Section */
+#video {
+    text-align: center; /* Pusatkan semua konten dalam bagian ini */
+    margin: 40px 0; /* Tambahkan jarak vertikal */
+}
+
+#video h2 {
+    font-size: 1.8em; /* Ukuran font judul */
+    color: #333; /* Warna teks judul */
+    margin-bottom: 10px;
+}
+
+#video p {
+    font-size: 1em; /* Ukuran font deskripsi */
+    color: #555; /* Warna teks deskripsi */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Kontainer Video */
 .video-container {
-    text-align: center;
-    margin: 20px auto; /* Margin otomatis untuk perataan tengah */
-    padding: 10px; /* Padding fleksibel */
-    border-radius: 10px; /* Sudut membulat untuk tampilan estetis */
-    background: #f1f1f1; /* Warna latar belakang netral */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
+    position: relative; /* Untuk menjaga aspek rasio video */
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+    height: 0; /* Tinggi diatur oleh padding-bottom */
+    overflow: hidden; /* Sembunyikan elemen yang melampaui batas */
+    background: #000; /* Latar belakang hitam untuk estetika */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    margin: 0 auto; /* Tengah secara horizontal */
+    max-width: 800px; /* Batas maksimal lebar kontainer */
 }
 
-/* Video Responsif */
-.video-container iframe,
-.video-container video {
-    width: 100%; /* Lebar penuh untuk responsivitas */
-    max-width: 800px; /* Batas maksimal lebar video */
-    height: auto; /* Proporsi otomatis sesuai lebar */
-    border-radius: 10px; /* Sudut membulat pada video */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Bayangan ringan */
-    transition: transform 0.3s ease; /* Animasi efek hover */
+.video-container iframe {
+    position: absolute; /* Posisi absolut untuk memenuhi kontainer */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh kontainer */
+    height: 100%; /* Tinggi penuh kontainer */
+    border: none; /* Hilangkan border default */
 }
 
-.video-container iframe:hover,
-.video-container video:hover {
-    transform: scale(1.03); /* Sedikit zoom saat hover */
-}
-
-/* Responsif untuk layar kecil (HP) */
+/* Responsif untuk Layar Kecil */
 @media (max-width: 768px) {
-    .video-container {
-        margin: 15px auto; /* Margin lebih kecil untuk layar kecil */
-        padding: 8px; /* Padding disesuaikan */
+    #video h2 {
+        font-size: 1.5em; /* Ukuran font lebih kecil untuk layar kecil */
     }
 
-    .video-container iframe,
-    .video-container video {
-        max-width: 100%; /* Pastikan video memenuhi lebar layar */
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Bayangan lebih halus di HP */
+    #video p {
+        font-size: 0.9em; /* Ukuran font deskripsi lebih kecil */
+    }
+
+    .video-container {
+        padding-bottom: 62.5%; /* Sesuaikan rasio aspek jika diperlukan */
     }
 }
 
