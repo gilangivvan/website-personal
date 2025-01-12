@@ -12,8 +12,9 @@ header {
     background: linear-gradient(90deg, #dae3f2, #507ef2);
     color: #fff;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 2em 0;
     border-bottom: 5px solid #031661;
+    
 }
 
 header h1 {
@@ -39,6 +40,7 @@ nav ul {
     background: #01010a;
     padding: 0;
     margin: 0;
+    display: flex;
     list-style: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -58,6 +60,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #6c5ce7;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -82,7 +85,7 @@ main {
     padding: 40px;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
 
 main:hover {
@@ -99,7 +102,7 @@ main:hover {
 
 
 h1, h2, h3 {
-    color: #080809; /* Ungu modern */
+    color: #080809; 
     margin-bottom: 20px;
     font-weight: 700;
 }
