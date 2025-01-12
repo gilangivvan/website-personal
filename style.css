@@ -37,7 +37,7 @@ header h1 {
 nav ul {
     display: flex;
     justify-content: space-around; /* Membuat kolom dengan jarak antar item */
-    background: #05055b;
+    background: #2c2c35;
     padding: 0;
     margin: 0;
     list-style: none;
