@@ -504,84 +504,38 @@ ul li {
     line-height: 1.8;
 }
 
-/* Footer */
+//* Footer */
 footer {
-    background: #8db6f8;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    border-top: 5px solid #051c63;
+    background: #8db6f8; /* Warna latar belakang biru muda */
+    color: #fff; /* Teks putih */
+    text-align: center; /* Teks di tengah */
+    padding: 20px 0; /* Ruang vertikal di dalam footer */
+    font-size: 0.9em; /* Ukuran font footer */
+    border-top: 5px solid #051c63; /* Garis pemisah atas dengan warna gelap */
 }
 
+/* Paragraf dalam footer */
 footer p {
-    margin: 0;
+    margin: 0; /* Menghilangkan margin untuk paragraf */
 }
 
-}
-
-
+/* Tautan dalam footer */
 footer a {
-    color: #6c5ce7;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #6c5ce7; /* Warna teks untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    font-weight: bold; /* Teks tebal */
+    transition: color 0.3s ease; /* Efek transisi saat hover */
 }
 
+/* Hover effect untuk tautan */
 footer a:hover {
-    color: #507ef2;
+    color: #507ef2; /* Warna lebih gelap saat hover */
 }
 
-/* Button Styles */
-button {
-    background: #6c5ce7;
-    color: #fff;
-    border: none;
-    padding: 0.8em 1.5em;
-    border-radius: 50px;
-    font-size: 1em;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.5);
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background: #4834d4; /* Warna hover lebih gelap */
-    transform: translateY(-2px);
-}
-
-/* Hover Effects */
-a, button {
-    transition: transform 0.2s ease;
-}
-
-a:hover, button:hover {
-    transform: scale(1.05);
-
-    /* Responsif untuk HP */
+/* Responsif untuk perangkat mobile */
 @media (max-width: 768px) {
     footer {
-        font-size: 0.8em;
-        padding: 15px 0;
-    }
-
-    nav ul {
-        flex-direction: column; /* Navigasi vertikal di HP */
-        align-items: center;
-    }
-
-    nav ul li a {
-        padding: 0.8em 1.5em; /* Padding lebih kecil */
-        font-size: 0.9em;
-    }
-
-    main {
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    footer {
-        font-size: 0.8em; /* Footer lebih kecil di HP */
+        font-size: 0.8em; /* Ukuran font lebih kecil di perangkat kecil */
+        padding: 15px 0; /* Padding lebih kecil */
     }
 }
-
