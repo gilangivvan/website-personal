@@ -116,6 +116,7 @@ p {
 }
 
 /* Video Section */
+/* Video Section */
 .video-container {
     text-align: center;
     margin: 20px auto; /* Margin otomatis untuk perataan */
@@ -154,13 +155,6 @@ p {
     }
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-    .video-container iframe,
-    .video-container video {
-        max-width: 100%; /* Lebar penuh untuk perangkat kecil */
-    }
-}
 
 
 /* Lists */
