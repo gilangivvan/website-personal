@@ -167,4 +167,51 @@ a, button {
 
 a:hover, button:hover {
     transform: scale(1.05);
+
+    /* Responsif untuk layar lebih kecil (HP) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Ukuran font lebih kecil di HP */
+        padding: 1.5em 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Navigasi vertikal di HP */
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 0.8em 1.5em; /* Padding lebih kecil */
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    footer {
+        font-size: 0.8em; /* Footer lebih kecil di HP */
+    }
+}
+
+/* Responsif untuk tablet (layar sedang) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    nav ul li a {
+        padding: 0.9em 1.8em; /* Sedikit lebih kecil untuk tablet */
+    }
+
+    main {
+        max-width: 90%; /* Konten lebih lebar pada tablet */
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
 }
