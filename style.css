@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Font modern dan profesional */
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #051c63; /* Warna latar belakang lebih lembut dan cerah */
+    color: #0a0b0b; /* Warna teks lebih kontras */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #dae3f2, #507ef2); /* Gradien warna pink modern */
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    text-decoration-color: #fff; 
+    border-bottom: 5px solid #031661;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 2.8em; 
+    margin: 0;
+    font-weight: 800;
+}
+
+/* Navigation Bar */
+nav ul {
+    background: #01010a; /* Biru gelap elegan */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: block;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #6c5ce7; /* Warna hover ungu yang menarik */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 960px;
+    margin: 40px auto;
+    background: #ffffff; /* Warna putih bersih */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #080809; /* Ungu modern */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #090a0b;
+    line-height: 1.8;
+}
+
+/* Video Section */
+.video-container {
+    text-align: center;
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+.video-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
+}
+
+.video-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Lists */
+ul {
+    padding: 0 20px;
+    list-style-type: circle; /* Bullet list lebih menarik */
+    color: #444;
+}
+
+ul li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #8db6f8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 5px solid #051c63; /* Warna sesuai tema */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #507ef2;
+}
+
+/* Button Styles */
+button {
+    background: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #4834d4; /* Warna hover lebih gelap */
+    transform: translateY(-2px);
+}
+
+/* Hover Effects */
+a, button {
+    transition: transform 0.2s ease;
+}
+
+a:hover, button:hover {
+    transform: scale(1.05);
+}
