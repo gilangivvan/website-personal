@@ -118,7 +118,7 @@ p {
 /* Video Section */
 #video {
     text-align: center; /* Pusatkan semua konten dalam bagian ini */
-    margin: 40px 0; /* Tambahkan jarak vertikal */
+    margin: 100px 0; /* Tambahkan jarak vertikal */
 }
 
 #video h2 {
