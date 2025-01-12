@@ -175,7 +175,7 @@ p {
     overflow: hidden; /* Sembunyikan elemen yang melampaui batas */
     background: #000; /* Latar belakang hitam untuk estetika */
     border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
     margin: 0 auto; /* Tengah secara horizontal */
     max-width: 800px; /* Batas maksimal lebar kontainer */
 }
@@ -255,7 +255,7 @@ button {
     border-radius: 50px;
     font-size: 1em;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.1);
+    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.5);
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -461,7 +461,7 @@ p {
     overflow: hidden; /* Sembunyikan elemen yang melampaui batas */
     background: #000; /* Latar belakang hitam untuk estetika */
     border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
     margin: 0 auto; /* Tengah secara horizontal */
     max-width: 800px; /* Batas maksimal lebar kontainer */
 }
@@ -541,7 +541,7 @@ button {
     border-radius: 50px;
     font-size: 1em;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.1);
+    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.5);
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
