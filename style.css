@@ -195,23 +195,24 @@ a:hover, button:hover {
     }
 }
 
-/* Responsif untuk tablet (layar sedang) */
-@media (max-width: 1024px) {
-    header h1 {
-        font-size: 2.3em;
-    }
+<header>
+    <h1>Desain Responsif Modern</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+</nav>
+<main>
+    <h2>Selamat Datang di Situs Kami</h2>
+    <p>Desain ini responsif dan cocok untuk perangkat apa pun!</p>
+</main>
+<footer>
+    <p>&copy; 2025 Desain Modern. Semua hak cipta dilindungi.</p>
+</footer>
 
-    nav ul li a {
-        padding: 0.9em 1.8em; /* Sedikit lebih kecil untuk tablet */
-    }
-
-    main {
-        max-width: 90%; /* Konten lebih lebar pada tablet */
-    }
-
-    footer {
-        padding: 15px 0;
-    }
-}
 
 }
