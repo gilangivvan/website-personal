@@ -1,3 +1,4 @@
+
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -112,6 +113,7 @@ nav ul li:nth-child(even) {
     }
 }
 
+
 /* Main Content */
 main {
     max-width: 960px;
@@ -216,6 +218,7 @@ ul li {
     margin: 10px 0;
     line-height: 1.8;
 }
+
 /* Footer */
 footer {
     background: #8db6f8;
@@ -296,7 +299,11 @@ a:hover, button:hover {
         font-size: 0.8em; /* Footer lebih kecil di HP */
     }
 }
-}    
+
+}
+
+
+
 
         font-size: 0.8em; /* Ukuran font lebih kecil di perangkat kecil */
         padding: 15px 0; /* Padding lebih kecil */
