@@ -216,88 +216,80 @@ ul li {
     margin: 10px 0;
     line-height: 1.8;
 }
-
 /* Footer */
 footer {
-    background: #8db6f8;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    border-top: 5px solid #051c63;
+    background: #8db6f8; /* Warna latar belakang */
+    color: #fff; /* Warna teks putih */
+    text-align: center; /* Teks di tengah */
+    padding: 20px 0; /* Padding atas dan bawah */
+    font-size: 0.9em; /* Ukuran font */
+    border-top: 5px solid #051c63; /* Garis atas */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* Menghapus margin pada paragraf */
 }
 
-}
-
-
+/* Link Footer */
 footer a {
-    color: #6c5ce7;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #6c5ce7; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+    font-weight: bold; /* Teks tebal */
+    transition: color 0.3s ease; /* Efek transisi pada hover */
 }
 
 footer a:hover {
-    color: #507ef2;
+    color: #507ef2; /* Warna link saat hover */
 }
 
-/* Button Styles */
+/* Tombol */
 button {
-    background: #6c5ce7;
-    color: #fff;
-    border: none;
-    padding: 0.8em 1.5em;
-    border-radius: 50px;
-    font-size: 1em;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.5);
-    transition: background 0.3s ease, transform 0.3s ease;
+    background: #6c5ce7; /* Warna latar tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border */
+    padding: 0.8em 1.5em; /* Padding tombol */
+    border-radius: 50px; /* Membulatkan tombol */
+    font-size: 1em; /* Ukuran font */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+    box-shadow: 0 5px 15px rgba(12, 90, 246, 0.5); /* Efek bayangan */
+    transition: background 0.3s ease, transform 0.3s ease; /* Efek transisi */
 }
 
 button:hover {
-    background: #4834d4; /* Warna hover lebih gelap */
-    transform: translateY(-2px);
+    background: #4834d4; /* Warna latar tombol saat hover */
+    transform: translateY(-2px); /* Efek naik sedikit saat hover */
 }
 
-/* Hover Effects */
+/* Hover Efek untuk Link dan Tombol */
 a, button {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /* Transisi untuk animasi */
 }
 
 a:hover, button:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efek memperbesar */
+}
 
-    /* Responsif untuk HP */
+/* Responsif untuk Perangkat Kecil */
 @media (max-width: 768px) {
     footer {
-        font-size: 0.8em;
-        padding: 15px 0;
+        font-size: 0.8em; /* Ukuran font lebih kecil */
+        padding: 15px 0; /* Padding lebih kecil */
     }
 
     nav ul {
-        flex-direction: column; /* Navigasi vertikal di HP */
+        flex-direction: column; /* Navigasi vertikal */
         align-items: center;
     }
 
     nav ul li a {
         padding: 0.8em 1.5em; /* Padding lebih kecil */
-        font-size: 0.9em;
+        font-size: 0.9em; /* Font lebih kecil */
     }
 
     main {
-        padding: 20px;
-        margin: 20px auto;
+        padding: 20px; /* Padding konten utama */
+        margin: 20px auto; /* Margin otomatis */
     }
-
-    footer {
-        font-size: 0.8em; /* Footer lebih kecil di HP */
-    }
-}
-
 }
 
 
