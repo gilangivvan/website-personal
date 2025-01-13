@@ -40,26 +40,24 @@ header h1 {
     }
 }
 
-/* Navigasi Utama */
+/* Navigation Bar */
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none; /* Menghapus bullet */
+    justify-content: space-around; /* Membuat kolom dengan jarak antar item */
+    background: #2c2c35;
     padding: 0;
     margin: 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Item Navigasi */
 nav ul li {
     margin: 0;
 }
 
-/* Link Navigasi */
+/* Teks Navigasi */
 nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     padding: 1em 2em;
     color: #fff;
     text-decoration: none;
@@ -67,32 +65,50 @@ nav ul li a {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* Efek Hover */
+/* Hover Effect */
 nav ul li a:hover {
     background: #6c5ce7;
     color: #fff;
     transform: scale(1.05);
 }
 
-/* Dua Kolom (Desktop) */
+/* Membuat dua kolom dengan flex */
 nav ul {
+    display: flex;
     justify-content: space-evenly;
 }
 
-nav ul li {
-    flex: 1; /* Membuat semua item memiliki ukuran sama */
+nav ul li:nth-child(odd) {
+    flex: 1; /* Menentukan bahwa item ganjil akan memakan ruang lebih */
 }
 
-/* Responsif untuk Tampilan Mobile */
+nav ul li:nth-child(even) {
+    flex: 1; /* Sama dengan item genap untuk meratakan ukuran */
+}
+
+/* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Vertikal di layar kecil */
+        flex-direction: column; /* Mengubah kolom menjadi vertikal di layar kecil */
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 0.8em 1.5em; /* Padding disesuaikan */
+        font-size: 0.9em; /* Ukuran font lebih kecil */
+    }
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Navigasi vertikal di HP */
         align-items: center;
     }
 
     nav ul li a {
         padding: 0.8em 1.5em;
-        font-size: 0.9em;
+        font-size: 0.9em; /* Font lebih kecil */
     }
 }
 
