@@ -295,6 +295,8 @@ a:hover, button:hover {
     footer {
         font-size: 0.8em; /* Footer lebih kecil di HP */
     }
+}
+}    
 
         font-size: 0.8em; /* Ukuran font lebih kecil di perangkat kecil */
         padding: 15px 0; /* Padding lebih kecil */
