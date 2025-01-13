@@ -44,9 +44,11 @@ header h1 {
 /* Navigation Bar */
 nav ul {
     display: flex;
-    justify-content: space-around; /* Membuat kolom dengan jarak antar item */
+    justify-content: center; /* Pusatkan elemen */
+    align-items: center; /* Pusatkan secara vertikal */
+    gap: 20px; /* Jarak antar item */
     background: #2c2c35;
-    padding: 0;
+    padding: 10px 20px; /* Tambahkan ruang di sekitar navigasi */
     margin: 0;
     list-style: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -54,64 +56,40 @@ nav ul {
 
 nav ul li {
     margin: 0;
+    flex: none; /* Pastikan item tidak meregang */
 }
 
 /* Teks Navigasi */
 nav ul li a {
-    display: block;
-    padding: 1em 2em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Teks tetap inline namun dapat diberi padding */
+    padding: 0.8em 1.5em; /* Ruang di sekitar teks */
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: 600; /* Tebalkan teks */
+    border-radius: 5px; /* Tambahkan sedikit sudut bulat */
+    transition: background 0.3s ease, transform 0.3s ease; /* Efek transisi */
 }
 
 /* Hover Effect */
 nav ul li a:hover {
-    background: #6c5ce7;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* Membuat dua kolom dengan flex */
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li:nth-child(odd) {
-    flex: 1; /* Menentukan bahwa item ganjil akan memakan ruang lebih */
-}
-
-nav ul li:nth-child(even) {
-    flex: 1; /* Sama dengan item genap untuk meratakan ukuran */
+    background: #6c5ce7; /* Warna latar saat hover */
+    transform: scale(1.05); /* Sedikit pembesaran */
 }
 
 /* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Mengubah kolom menjadi vertikal di layar kecil */
+        flex-direction: column; /* Navigasi vertikal di layar kecil */
         align-items: center;
+        gap: 10px; /* Jarak antar item lebih kecil */
     }
 
     nav ul li a {
-        padding: 0.8em 1.5em; /* Padding disesuaikan */
+        padding: 0.8em 1em; /* Sesuaikan padding untuk layar kecil */
         font-size: 0.9em; /* Ukuran font lebih kecil */
     }
 }
 
-/* Responsif untuk HP */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Navigasi vertikal di HP */
-        align-items: center;
-    }
-
-    nav ul li a {
-        padding: 0.8em 1.5em;
-        font-size: 0.9em; /* Font lebih kecil */
-    }
-}
 
 
 /* Main Content */
@@ -308,4 +286,5 @@ a:hover, button:hover {
         font-size: 0.8em; /* Ukuran font lebih kecil di perangkat kecil */
         padding: 15px 0; /* Padding lebih kecil */
     }
-}
+}    
+
