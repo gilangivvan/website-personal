@@ -109,8 +109,8 @@ main:hover {
 /* Responsif untuk HP */
 @media (max-width: 768px) {
     main {
-        padding: 15px;
-        margin: 15px auto;
+        padding: 0px;
+        margin: 0px auto;
     }
 }
 
@@ -179,7 +179,7 @@ p {
     }
 
     .video-container {
-        padding-bottom: 62.5%; /* Sesuaikan rasio aspek jika diperlukan */
+        padding-bottom: 60.5%; /* Sesuaikan rasio aspek jika diperlukan */
     }
 }
 
