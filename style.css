@@ -72,7 +72,7 @@ nav ul li a {
 
 /* Hover Effect */
 nav ul li a:hover {
-    background: #6c5ce7; /* Warna latar saat hover */
+    background: #06e236; /* Warna latar saat hover */
     transform: scale(1.05); /* Sedikit pembesaran */
 }
 
